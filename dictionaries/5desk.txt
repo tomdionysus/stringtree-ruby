@@ -1,11 +1,9 @@
-A
 a
 Aachen
 Aalborg
 aardvark
 Aarhus
 Aaron
-AB
 Ab
 abaci
 aback
@@ -37,9 +35,7 @@ abbreviated
 abbreviation
 abbreviator
 Abby
-ABC
 ABCs
-ABD
 Abdias
 abdicate
 abdication
@@ -109,7 +105,6 @@ abloom
 ablution
 ablutions
 ably
-ABM
 Abnaki
 abnegate
 abnegation
@@ -515,7 +510,6 @@ across
 acrostic
 acrylic
 act
-ACTH
 actin
 acting
 actinic
@@ -1140,7 +1134,6 @@ aid
 Aida
 aide
 aider
-AIDS
 aigret
 aigrette
 Aiken
@@ -1615,7 +1608,6 @@ Alvin
 always
 Alyce
 alyssum
-AM
 am
 Amagasaki
 amah
@@ -2835,7 +2827,6 @@ arborvitae
 arbour
 arbovirus
 arbutus
-ARC
 arc
 arcade
 arcaded
@@ -3191,7 +3182,6 @@ ascesis
 ascetic
 ascetically
 asceticism
-ASCII
 Asclepius
 ascot
 ascribable
@@ -3494,7 +3484,6 @@ Atlantis
 Atlas
 atlas
 atlatl
-ATM
 Atman
 atman
 atmosphere
@@ -3520,7 +3509,6 @@ atone
 atonement
 atoner
 atop
-ATP
 atria
 atrial
 atrium
@@ -3606,7 +3594,6 @@ Attucks
 attune
 attuned
 attunement
-ATV
 atwitter
 Atwood
 atypical
@@ -3867,7 +3854,6 @@ avowed
 avowedly
 avuncular
 aw
-AWACS
 await
 awake
 awaken
@@ -3899,7 +3885,6 @@ awned
 awning
 awoke
 awoken
-AWOL
 awol
 awry
 ax
@@ -3940,12 +3925,9 @@ Azorean
 Azores
 Azorian
 Azov
-AZT
 Aztec
 Aztecan
 azure
-B
-b
 baa
 Baal
 Baalim
@@ -4526,7 +4508,6 @@ bashful
 bashfully
 bashfulness
 bashing
-BASIC
 Basic
 basic
 basically
@@ -4662,7 +4643,6 @@ Bayreuth
 bazaar
 bazar
 bazooka
-BB
 be
 beach
 beachcomber
@@ -5233,7 +5213,6 @@ bezel
 bhang
 Bharat
 Bhopal
-BHT
 Bhutan
 Bhutanese
 Bhutto
@@ -5797,7 +5776,6 @@ blowtorch
 blowup
 blowy
 blowzy
-BLT
 blubber
 blubbery
 bludgeon
@@ -7172,8 +7150,6 @@ Byzantine
 byzantine
 Byzantinism
 Byzantium
-C
-c
 cab
 cabal
 Cabala
@@ -8306,9 +8282,6 @@ cayman
 Cayuga
 Cayuse
 cayuse
-CB
-CCD
-CD
 cease
 ceasefire
 ceaseless
@@ -8446,7 +8419,6 @@ centrism
 centrist
 centurion
 century
-CEO
 cephalic
 cephalopod
 Cepheus
@@ -9900,7 +9872,6 @@ cobbled
 cobbler
 cobblestone
 Coblenz
-COBOL
 Cobol
 cobra
 cobweb
@@ -10083,7 +10054,6 @@ coition
 coitus
 Coke
 coke
-COLA
 cola
 colander
 Colbert
@@ -12094,7 +12064,6 @@ cozily
 coziness
 Cozumel
 cozy
-CPU
 crab
 crabbed
 crabbedly
@@ -12471,7 +12440,6 @@ crowned
 crowning
 Croydon
 crozier
-CRT
 cruces
 crucial
 cruciality
@@ -12910,8 +12878,6 @@ Czechoslovak
 Czechoslovakia
 Czechoslovakian
 Czestochowa
-D
-d
 dab
 dabber
 dabble
@@ -13192,7 +13158,6 @@ dazzle
 dazzler
 dazzling
 dazzlingly
-DDT
 deacon
 deaconate
 deaconess
@@ -14453,7 +14418,6 @@ dextrose
 dextrous
 dextrously
 dextrousness
-DH
 Dhaka
 dharma
 Dhaulagiri
@@ -15491,13 +15455,11 @@ dizzily
 dizziness
 dizzy
 dizzying
-DJ
 Djakarta
 djellaba
 djellabah
 Djibouti
 djinn
-DNA
 Dnepr
 Dnieper
 Dniester
@@ -15746,7 +15708,6 @@ Dorset
 Dorsetshire
 Dortmund
 dory
-DOS
 dosage
 dose
 dosimeter
@@ -15882,7 +15843,6 @@ dozen
 dozens
 dozenth
 dozer
-DP
 drab
 drably
 drabness
@@ -16315,7 +16275,6 @@ dutifulness
 duty
 Duvalier
 duvet
-DVD
 Dvorak
 Dwaine
 dwarf
@@ -16330,7 +16289,6 @@ dwell
 dweller
 dwelling
 dwelt
-DWI
 Dwight
 dwindle
 dwindling
@@ -16387,8 +16345,6 @@ dystrophic
 dystrophy
 Dzerzhinsk
 Dzerzhinsky
-E
-e
 each
 Eadwig
 eager
@@ -16491,7 +16447,6 @@ eavesdropper
 eavesdropping
 Eban
 ebb
-EBCDIC
 Ebeneezer
 Eblana
 Ebola
@@ -17232,7 +17187,6 @@ emptiness
 empty
 empyreal
 empyrean
-EMT
 emu
 emulate
 emulation
@@ -17784,7 +17738,6 @@ eponym
 eponymous
 epoxy
 epsilon
-EQ
 equability
 equable
 equably
@@ -18001,7 +17954,6 @@ esoterica
 esoterically
 esotericism
 esotericist
-ESP
 espadrille
 espalier
 especial
@@ -18919,8 +18871,6 @@ Eysenck
 Ezechiel
 Ezekiel
 Ezra
-F
-f
 fa
 fab
 Faberge
@@ -19134,7 +19084,6 @@ fantastically
 fantasticalness
 fantasy
 fanzine
-FAQ
 faquir
 far
 farad
@@ -19669,7 +19618,6 @@ Fife
 fife
 fifer
 Fifeshire
-FIFO
 fifteen
 fifteenth
 fifth
@@ -20324,7 +20272,6 @@ flyswatter
 flyway
 flyweight
 flywheel
-FM
 foal
 foam
 foaminess
@@ -20705,7 +20652,6 @@ fortissimo
 fortitude
 fortnight
 fortnightly
-FORTRAN
 fortress
 fortuitous
 fortuitously
@@ -21156,7 +21102,6 @@ fry
 fryable
 Frye
 fryer
-FTP
 Fuad
 Fuchou
 fuchsia
@@ -21360,8 +21305,6 @@ fuzz
 fuzzily
 fuzziness
 fuzzy
-G
-g
 gab
 gabardine
 gabber
@@ -22036,7 +21979,6 @@ ghoul
 ghoulish
 ghoulishly
 ghoulishness
-GI
 Giacometti
 giant
 giantess
@@ -22076,7 +22018,6 @@ gigantism
 giggle
 giggler
 giggly
-GIGO
 gigolo
 Gijon
 Gila
@@ -23162,7 +23103,6 @@ guesthouse
 Guevara
 guff
 guffaw
-GUI
 Guiana
 Guianan
 guidable
@@ -23350,8 +23290,6 @@ gyroscope
 gyroscopic
 gyroscopically
 gyve
-H
-h
 ha
 Haarlem
 Habacuc
@@ -23958,7 +23896,6 @@ haziness
 hazing
 Hazlitt
 hazy
-HDL
 he
 head
 headache
@@ -24707,11 +24644,9 @@ Hitler
 Hitlerian
 hitter
 Hittite
-HIV
 hive
 hives
 hmm
-HMO
 Hmong
 hoagie
 hoagy
@@ -25247,8 +25182,6 @@ hoyden
 hoydenish
 Hoyle
 hryvnia
-HTML
-HTTP
 Huang
 huarache
 huaraches
@@ -25265,7 +25198,6 @@ hubristic
 huckleberry
 huckster
 hucksterism
-HUD
 Huddersfield
 huddle
 huddler
@@ -25661,8 +25593,6 @@ hysteric
 hysterical
 hysterically
 hysterics
-I
-i
 Iacocca
 Iago
 iamb
@@ -25683,9 +25613,7 @@ Ibiza
 Ibo
 Ibsen
 ibuprofen
-IC
 Icarus
-ICBM
 ice
 iceberg
 iceboat
@@ -25727,7 +25655,6 @@ iconoclastic
 iconoclastically
 ictus
 icy
-ID
 id
 Ida
 Idaho
@@ -28090,17 +28017,14 @@ ionizer
 ionosphere
 ionospheric
 iota
-IOU
 Iowa
 Iowan
 ipecac
 Iphigenia
 Ipoh
 Ipswich
-IQ
 Iqaluit
 Iquitos
-IRA
 Ira
 Iraklion
 Iran
@@ -28382,8 +28306,6 @@ itinerantly
 itinerary
 its
 itself
-IUD
-IV
 Ivan
 Ivanovo
 Ives
@@ -28399,8 +28321,6 @@ Iyyar
 Izhevsk
 Izmir
 Izmit
-J
-j
 jab
 Jabalpur
 jabber
@@ -28523,7 +28443,6 @@ jasmine
 Jason
 Jasper
 jasper
-JATO
 jato
 jaundice
 jaundiced
@@ -29036,8 +28955,6 @@ juvenilized
 juxtapose
 juxtaposition
 juxtapositional
-K
-k
 Kaaren
 Kabbala
 Kabbalah
@@ -29277,7 +29194,6 @@ keypuncher
 keystone
 keystroke
 keyword
-KGB
 Khabarovsk
 Khachaturian
 khaki
@@ -29565,7 +29481,6 @@ knurl
 knurled
 knurly
 Knut
-KO
 koala
 Kobe
 Koblenz
@@ -29610,7 +29525,6 @@ Kotah
 Kowloon
 kowtow
 kowtower
-KP
 kraal
 Krakatau
 Krakatoa
@@ -29688,8 +29602,6 @@ Kyoto
 Kyrgyz
 Kyrgyzstan
 Kyushu
-L
-l
 la
 Lab
 lab
@@ -29885,7 +29797,6 @@ lampoonist
 lamppost
 lamprey
 lampshade
-LAN
 Lana
 Lanai
 lanai
@@ -30202,8 +30113,6 @@ lazily
 laziness
 lazy
 lazybones
-LCD
-LDL
 lea
 leach
 leacher
@@ -30293,7 +30202,6 @@ lector
 lecture
 lecturer
 lectureship
-LED
 led
 Leda
 lederhosen
@@ -30711,7 +30619,6 @@ lifestyle
 lifetime
 lifework
 Liffey
-LIFO
 lift
 liftable
 lifter
@@ -31415,7 +31322,6 @@ lowliness
 lowlives
 lowly
 lowness
-LOX
 lox
 loyal
 loyalism
@@ -31427,9 +31333,6 @@ Loyang
 Loyd
 Loyola
 lozenge
-LP
-LPN
-LSD
 Luanda
 Luanne
 luau
@@ -31634,7 +31537,6 @@ luxuriousness
 luxury
 Luzon
 Lviv
-LVN
 Lvov
 lwei
 Lyallpur
@@ -31688,8 +31590,6 @@ lyses
 lysin
 lysis
 Lysistrata
-M
-m
 ma
 Maas
 Maastricht
@@ -32828,7 +32728,6 @@ Mazzini
 Mbabane
 Mbini
 Mboya
-MC
 McAllen
 McCarthy
 McCarthyism
@@ -33521,7 +33420,6 @@ mezzo
 mezzotint
 mezzotinter
 mi
-MIA
 Mia
 Miami
 Miamian
@@ -33636,7 +33534,6 @@ Mideastern
 Mideasterner
 midge
 midget
-MIDI
 midi
 Midian
 Midianite
@@ -33954,7 +33851,6 @@ mirthfulness
 mirthless
 mirthlessly
 mirthlessness
-MIRV
 miry
 misaddress
 misadministration
@@ -34919,7 +34815,6 @@ Mozambican
 Mozambique
 Mozart
 mozzarella
-MPEG
 Ms
 Mss
 mu
@@ -35335,8 +35230,6 @@ mythomane
 mythomania
 mythomaniac
 Myukolayiv
-N
-n
 nab
 Nabataea
 Nabataean
@@ -35473,7 +35366,6 @@ narrows
 narthex
 narwhal
 nary
-NASA
 nasal
 nasality
 nasalization
@@ -35526,7 +35418,6 @@ nativist
 nativistic
 Nativity
 nativity
-NATO
 natter
 natterer
 nattily
@@ -35592,7 +35483,6 @@ Nazareth
 Nazi
 Naziism
 Nazism
-NCO
 Ndola
 ne
 Neal
@@ -36991,8 +36881,6 @@ nymphomaniac
 nymphomaniacal
 nystagmic
 nystagmus
-O
-o
 oaf
 oafish
 oafishly
@@ -37278,7 +37166,6 @@ octosyllabic
 octuplet
 ocular
 oculist
-OD
 odalisk
 odalisque
 odd
@@ -37432,7 +37319,6 @@ ointment
 Oise
 Ojibwa
 Ojibway
-OK
 Oka
 Okavango
 okay
@@ -37632,7 +37518,6 @@ opaque
 opaquely
 opaqueness
 ope
-OPEC
 open
 opener
 openhanded
@@ -38651,14 +38536,9 @@ Ozarks
 ozone
 ozonic
 ozonosphere
-P
-p
-PA
 pa
-PABA
 Pablum
 pabulum
-PAC
 pace
 pacemaker
 pacemaking
@@ -39279,7 +39159,6 @@ parve
 parvenu
 pas
 Pasadena
-PASCAL
 Pascal
 pascal
 paschal
@@ -39514,11 +39393,6 @@ payola
 payout
 payroll
 payslip
-PBX
-PC
-PCB
-PCP
-PDQ
 pea
 peace
 peaceable
@@ -40245,7 +40119,6 @@ peyote
 peyotl
 pfennig
 pfennige
-PG
 pH
 phaeton
 phage
@@ -40733,7 +40606,6 @@ pimping
 pimple
 pimpled
 pimply
-PIN
 pin
 pinafore
 pinata
@@ -41238,7 +41110,6 @@ pluvial
 ply
 Plymouth
 plywood
-PMS
 pneumatic
 pneumatical
 pneumatically
@@ -41842,7 +41713,6 @@ pouter
 poutingly
 pouty
 poverty
-POW
 powder
 powdered
 powdery
@@ -43521,7 +43391,6 @@ puzzled
 puzzlement
 puzzler
 puzzling
-PVC
 pya
 Pygmalion
 pygmean
@@ -43570,8 +43439,6 @@ python
 pythoness
 pyx
 Pyxis
-Q
-q
 Qabalah
 Qaddafi
 Qadhafi
@@ -43843,8 +43710,6 @@ quoth
 quotidian
 quotient
 qwerty
-R
-r
 Ra
 Rabat
 rabbet
@@ -44048,7 +43913,6 @@ rales
 rallier
 rally
 Ralph
-RAM
 ram
 Rama
 Ramadan
@@ -44299,7 +44163,6 @@ razor
 razorback
 razz
 razzmatazz
-RBI
 re
 reabsorb
 reabsorption
@@ -45278,7 +45141,6 @@ reluctance
 reluctant
 reluctantly
 rely
-REM
 rem
 remade
 remain
@@ -46424,8 +46286,6 @@ Riviera
 rivulet
 Riyadh
 riyal
-RN
-RNA
 roach
 road
 roadbed
@@ -46548,7 +46408,6 @@ Rollin
 rolling
 rollover
 Rolvaag
-ROM
 Rom
 Roma
 Romagna
@@ -46989,7 +46848,6 @@ ruthlessness
 rutting
 rutty
 Ruwenzori
-RV
 Rwanda
 Rwandan
 Rx
@@ -47001,8 +46859,6 @@ rye
 Ryle
 Ryukyu
 Ryukyuan
-S
-s
 Saar
 Saarland
 Sabah
@@ -47272,7 +47128,6 @@ salvia
 salvo
 Salween
 Salzburg
-SAM
 Sam
 Samantha
 Samar
@@ -48814,7 +48669,6 @@ sforzandi
 sforzando
 sforzati
 sforzato
-SGML
 sgraffiti
 sgraffito
 sh
@@ -50001,7 +49855,6 @@ slowdown
 slowly
 slowness
 slowpoke
-SLR
 sludge
 sludgy
 slue
@@ -50616,7 +50469,6 @@ sorta
 sorter
 sortie
 sortilege
-SOS
 sostenuto
 sot
 soteriological
@@ -50804,7 +50656,6 @@ spavined
 spawn
 spawner
 spay
-SPCA
 speak
 speakable
 speakeasy
@@ -51289,9 +51140,7 @@ squirt
 squish
 squishy
 Srinagar
-SRO
 ssh
-SST
 stab
 stabbing
 stabile
@@ -51525,7 +51374,6 @@ staves
 Stavropol
 stay
 stays
-STD
 stead
 steadfast
 steadfastly
@@ -51800,7 +51648,6 @@ stoicism
 stoke
 stoked
 stoker
-STOL
 stole
 stolen
 stolid
@@ -53078,7 +52925,6 @@ swash
 swashbuckler
 swashbuckling
 swastika
-SWAT
 swat
 swatch
 swath
@@ -53365,8 +53211,6 @@ Szczecin
 Szechuan
 Szechwan
 Szeged
-T
-t
 tab
 Tabasco
 tabbouleh
@@ -53797,7 +53641,6 @@ taxpaying
 taxying
 Taylor
 Tayside
-TB
 Tbilisi
 Tchaikovskian
 Tchaikovsky
@@ -54298,7 +54141,6 @@ thaumaturgical
 thaumaturgist
 thaumaturgy
 thaw
-THC
 the
 theanthropic
 thearchy
@@ -54906,12 +54748,10 @@ tittle
 titular
 Titus
 tizzy
-TKO
 Tlaxcala
 Tlingit
 tmeses
 tmesis
-TNT
 to
 toad
 toadstool
@@ -56195,7 +56035,6 @@ Tuvaluan
 tux
 tuxedo
 Tuxtla
-TV
 Tver
 twaddle
 twaddler
@@ -56336,8 +56175,6 @@ Tyrrhenian
 tzar
 tzarina
 Tzupo
-U
-u
 Ubangi
 Ubermensch
 Ubermenschen
@@ -56352,7 +56189,6 @@ Uccello
 udder
 Ufa
 Uffizi
-UFO
 ufologist
 ufology
 Uganda
@@ -58416,7 +58252,6 @@ urinary
 urinate
 urination
 urine
-URL
 urn
 urogenital
 urologic
@@ -58450,7 +58285,6 @@ usefulness
 useless
 uselessly
 uselessness
-USENET
 Usenet
 user
 username
@@ -58510,8 +58344,6 @@ uxoriously
 uxoriousness
 Uzbek
 Uzbekistan
-V
-v
 vacancy
 vacant
 vacantly
@@ -58751,8 +58583,6 @@ vaunt
 vaunted
 vaunter
 vauntingly
-VCR
-VDT
 Veadar
 veal
 Veblen
@@ -59250,7 +59080,6 @@ violinist
 violist
 violoncellist
 violoncello
-VIP
 viper
 viperine
 viperish
@@ -59553,7 +59382,6 @@ voyeur
 voyeurism
 voyeuristic
 voyeuristically
-VTOL
 Vulcan
 vulcanism
 vulcanizable
@@ -59585,11 +59413,8 @@ vulvae
 vulval
 vulvar
 vying
-W
-w
 Wabash
 wabble
-WAC
 Wac
 wackily
 wackiness
@@ -59837,7 +59662,6 @@ washstand
 washtub
 washwoman
 washy
-WASP
 Wasp
 wasp
 Waspish
@@ -59910,7 +59734,6 @@ waterway
 waterwheel
 waterworks
 watery
-WATS
 Watson
 Watt
 watt
@@ -61003,10 +60826,7 @@ Wyeth
 Wylie
 Wyoming
 Wyomingite
-WYSIWYG
 wysiwyg
-X
-x
 Xanadu
 Xanthippe
 Xanthus
@@ -61042,8 +60862,6 @@ xylem
 xyloid
 xylophone
 xylophonist
-Y
-y
 ya
 yacht
 yachting
@@ -61163,8 +60981,6 @@ yin
 yip
 yippee
 yippie
-YMCA
-YMHA
 yo
 yodel
 yodeler
@@ -61240,10 +61056,6 @@ yuppy
 yurt
 Yvette
 Yvonne
-YWCA
-YWHA
-Z
-z
 Zacatecas
 Zach
 Zachariah
@@ -61403,4 +61215,3 @@ zygosis
 zygote
 zygotic
 zymurgy
-Zzz

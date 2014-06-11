@@ -5,6 +5,7 @@ class StringTreeItem
     @match = match
     @node = node
   end
+  
   def match?
     @match
   end
