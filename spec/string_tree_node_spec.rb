@@ -25,10 +25,10 @@ describe StringTreeNode do
       expect(@nodeb.add_horizontal_char('a')).to eq(@nodeb.add_horizontal_char('a'))
     end
     it "count left correct" do
-      expect(@nodeb.count_left).to eq(@nodeb.count_left)
+      expect(@nodeb.count(:left)).to eq(@nodeb.count(:left))
     end
     it "count right correct" do
-      expect(@nodeb.count_right).to eq(@nodeb.count_right)
+      expect(@nodeb.count(:right)).to eq(@nodeb.count(:right))
     end
   end
 

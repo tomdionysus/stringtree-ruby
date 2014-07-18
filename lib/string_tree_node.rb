@@ -102,21 +102,11 @@ class StringTreeNode
     lastvaluenode
   end
 
-  def count_left
+  def count(direction)
     i = 0
     node = self
     while (node != nil)
-      node = node.left
-      i += 1
-    end
-    i
-  end
-
-  def count_right
-    i = 0
-    node = self
-    while (node != nil)
-      node = node.right
+      node = node.send(direction)
       i += 1
     end
     i
@@ -124,7 +114,7 @@ class StringTreeNode
 
   def balance
     node = self
-    i = (node.count_right - node.count_left)/2
+    i = (node.count(:right) - node.count(:left))/2
     while (i!=0)
       if (i>0)
         mvnode = node.right
@@ -157,16 +147,6 @@ class StringTreeNode
     @down.walk(list, str+char) if @down!=nil
     @left.walk(list, str) if @left!=nil
     @right.walk(list, str) if @right!=nil
-  end
-
-  def strlength
-    i=0
-    node = self
-    while (node != nil)
-      node = node.up
-      i += 1
-    end
-    i
   end
 
   def to_s
