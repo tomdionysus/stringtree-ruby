@@ -2,32 +2,34 @@
 
 ## Purpose
 
-StringTree is a (very) fast forward-only matching tokeniser, that is, it can:
+Stringtree is a (very) fast forward-only matching tokeniser, that is, it can:
 
 * Load a dictionary of arbitarty size and record count - e.g. an actual dictionary, an english word list - where each record is associated with a key - e.g. a numeric identifier for the word.
 * Parse an arbitary data string in a single pass, finding and storing instances of each item in the dictionary and storing their offsets and associated keys.
 
 This has become my 'hello world' over the years with any new language. I use it to get to know a language, as implementing it correctly involves many of the usual concepts needed get started coding from the hip (syntax, grammar, classes, public/private instance vars, statics, pass-by value/pass-by-reference etc.) not to mention usual code support skills like how to set up unit tests for this language and environment, etc.
 
+## Installation
+
+```ruby
+gem install stringtree
+```
+
 ## Implementation
 
 Stringtree is based on multidimensional binary trees - Each node in the tree has its usual left/right references to its children, but also an optional 'down' reference, which would refer to the root of the binary tree representing the next character in the string from this point. This version also has an 'up' reference on the node which can be faster for iterating backward through a set of trees.
 
-From a CS point of view, StringTree is a specific implementation of a nested n-dimensional trie.
-
-## Performance
-
-StringTree on a Quad Core2 with Ubuntu 12.04 under ruby, can average approximately 75,000 matches per second using an english dictionary (optimized) and a copy of Hamlet or War and Peace.
+From a CS point of view, Tree is a specific implementation of a nested n-dimensional trie.
 
 ## Limitations
 
-* StringTree is not intended and should not be used as a key/value store. There are much faster algorithims for storing such data. 
-* StringTree should not be used in place of regular expressions. StringTree is good when the total number and/or size of the tokens to be found is either unknown or dynamic.
-* StringTree is essentially a byte tokeniser and is case-sensitive. It would be trivial to extend it to search in an case insensitive manner, however.
+* Tree is not intended and should not be used as a key/value store. There are much faster algorithims for storing such data. 
+* Tree should not be used in place of regular expressions. Tree is good when the total number and/or size of the tokens to be found is either unknown or dynamic.
+* Tree is essentially a byte tokeniser and is case-sensitive. It would be trivial to extend it to search in an case insensitive manner, however.
 
 ## Applications
 
-StringTree has the following applications:
+Tree has the following applications:
 
 * Spellchecking
 * Virus scanning
@@ -43,11 +45,11 @@ The demo is tested and runs under Ruby 1.9.3, and will probably work under earli
 ## Specs
 Specs are rspec, as follows:
 
-    rspec specs
+    rspec
 
 ## Demo
 
-    ruby demo.rb
+    bundle exec ruby examples/demo.rb
 
 This will generate two files:
 

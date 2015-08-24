@@ -1,17 +1,16 @@
 require 'spec_helper'
-require 'string_tree_node'
 
-describe StringTreeNode do
+describe Stringtree::Node do
   describe "when instantiated" do
     it "has correct char" do
-      @nodea = StringTreeNode.new 'a'
+      @nodea = Stringtree::Node.new 'a'
       expect(@nodea.char).to eq(@nodea.char)
     end
   end
 
   describe "add tests" do
     before do
-      @nodeb = StringTreeNode.new 'b'
+      @nodeb = Stringtree::Node.new 'b'
       @nodec = @nodeb.add_horizontal_char('c')
       @nodea = @nodeb.add_horizontal_char('a')
     end
@@ -34,7 +33,7 @@ describe StringTreeNode do
 
   describe "find tests" do
     before do
-      @nodeb = StringTreeNode.new 'b'
+      @nodeb = Stringtree::Node.new 'b'
       @nodec = @nodeb.add_horizontal_char('c')
       @nodea = @nodeb.add_horizontal_char('a')
     end
@@ -48,7 +47,7 @@ describe StringTreeNode do
 
   describe "vertical tests" do
     before do
-      @node = StringTreeNode.new 'a'
+      @node = Stringtree::Node.new 'a'
       @str = "testing"
       @node.add_vertical(@str, 'one')
     end
@@ -71,7 +70,7 @@ describe StringTreeNode do
 
   describe "optimize tests" do
     before do
-      @node = StringTreeNode.new 'a'
+      @node = Stringtree::Node.new 'a'
       @val = {
         "one"=>1, "two"=>2, "three"=>3, "four"=>4, "five"=>5, "six"=>6, "seven"=>7, "eight"=>8, "nine"=>9, "ten"=>10,
         "eleven"=>11, "twelve"=>12, "thirteen"=>13, "fourteen"=>14, "fifteen"=>15, "sixteen"=>16, "seventeen"=>17, "eighteen"=>18, "nineteen"=>19, "twenty"=>20
@@ -93,6 +92,43 @@ describe StringTreeNode do
     it "find_vertical does not find superstring" do
       expect(@node.find_vertical("testing1")).to eq(@node.find_vertical("testing1"))
       expect(@node.find_vertical("testin")).to eq(@node.find_vertical("testin"))
+    end
+  end
+
+  describe '#walk' do
+    it 'should walk a tree correctly' do
+      inst = Stringtree::Node.new 'b'
+      inst.left = Stringtree::Node.new 'a'
+      inst.right = Stringtree::Node.new 'c'
+      inst.down = Stringtree::Node.new '2'
+      inst.down.left = Stringtree::Node.new '1'
+      inst.down.right = Stringtree::Node.new '3'
+
+      list = []
+      inst.walk do |k,v|
+        puts k,v
+        list << { k => v }
+      end
+      expect(list).to eq []
+    end
+
+  end
+
+  describe '#all_partials' do
+    it 'should call @down.walk if it exists' do
+
+      inst = Stringtree::Node.new 'a'
+      inst.down = Stringtree::Node.new 'b'
+
+      expect(inst.down).to receive(:walk).with('one')
+      inst.all_partials('one')
+    end
+
+    it 'should not call @down.walk if it doesnt exist' do
+      # Spec will fail with exception if faulty.
+      inst = Stringtree::Node.new 'a'
+      inst.down = nil
+      inst.all_partials('one')
     end
   end
 end

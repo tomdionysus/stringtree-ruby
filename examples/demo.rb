@@ -1,14 +1,15 @@
-require_relative 'lib/string_tree'
+require 'stringtree'
 
 class Main
   def main(argc)
     puts "StringTree Ruby Demo"
 
     begin
-      @st = StringTree.new
+      root = File.dirname(__FILE__)
+      @st = Stringtree::Tree.new
       puts "Loading Dictionary..."
       @count = 0
-      File.open("dictionaries/5desk.txt", "r") do |infile|
+      File.open("#{root}/dictionary.txt", "r") do |infile|
         while line = infile.gets
           line = line.strip
           @st.add(line, @count+=1)
@@ -21,26 +22,18 @@ class Main
       @st.optimize
       puts "Optimized #{@count} entries in "+sprintf("%.2f",(Time.now-t)*1000)+"ms"
 
-      load_hamlet
-      do_match 'hamlet.tokens.txt'
+      puts "-Loading Hamlet-------------------"
+      load "#{root}/hamlet.txt"
+      do_match "hamlet.tokens.txt"
 
-      load_war_and_peace
-      do_match 'warandpeace.tokens.txt'
+      puts "--Loading War And Peace-----------"
+      load "#{root}/warandpeace.txt"
+      do_match "warandpeace.tokens.txt"
 
       do_partial_matching
-    rescue
-      puts "StringTree has encountered an error. Please run again."
+    rescue Exception => e
+      puts "Stringtree demo has encountered an error (#{e.message}). Please run again."
     end
-  end
-
-  def load_hamlet
-    puts "-Loading Hamlet-------------------"
-    load 'benchmark/hamlet.txt'
-  end
-
-  def load_war_and_peace
-    puts "--Loading War And Peace-----------"
-    load 'benchmark/warandpeace.txt'
   end
 
   def load(file_name)
@@ -51,7 +44,7 @@ class Main
     t=Time.now
     puts "Matching #{@count} entries in #{@contents.length} bytes..."
     list = []
-    @st.match_all @contents, list
+    @st.match_all(@contents) { |match| list << match }
     interval = (Time.now-t)*1000
 
     puts list.length.to_s+" entities matched in "+sprintf("%.2f",interval)+"ms ("+sprintf("%.2f", list.length / interval * 1000)+" entities/s)"
@@ -60,7 +53,7 @@ class Main
       puts "Writing File #{output_file_name}"
       File.open(output_file_name,'wb') do |f|
         list.each do |item|
-          f.write item.offset.to_s + ": #{item.node} #{item.node.value} (#{item.node.strlength})\n"
+          f.write item.offset.to_s + ": #{item.node} #{item.node.value} (#{item.node.length})\n"
         end
       end
     end
@@ -73,10 +66,10 @@ class Main
       print "> "
       x = gets.chomp
       return if x == 'exit'
-      partials = @st.find_partial(x)
+      partials = @st.partials(x)
       str = ""
       unless partials.nil?
-        partials.collect { |partial| str += partial[:key]+" " }
+        partials.collect { |partial| str += "#{partial} " }
       else
         str =  "No Matches Found for '#{x}'"
       end
