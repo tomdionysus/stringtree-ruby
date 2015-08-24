@@ -1,6 +1,10 @@
 # stringtree-ruby
 
-## Purpose
+[![Build Status](https://travis-ci.org/tomdionysus/stringtree-ruby.svg?branch=master)](https://travis-ci.org/tomdionysus/stringtree-ruby)
+[![Coverage Status](https://coveralls.io/repos/tomdionysus/stringtree-ruby/badge.svg?branch=master&service=github)](https://coveralls.io/github/tomdionysus/stringtree-ruby?branch=master)
+[![Gem Version](https://badge.fury.io/rb/stringtree.svg)](http://badge.fury.io/rb/stringtree)
+[![Dependency Status](https://gemnasium.com/tomdionysus/stringtree.svg)](https://gemnasium.com/tomdionysus/stringtree)
+[![Gem Downloads](http://ruby-gem-downloads-badge.herokuapp.com/stringtree?color=brightgreen)](http://ruby-gem-downloads-badge.herokuapp.com/stringtree?color=brightgreen)
 
 Stringtree is a (very) fast forward-only matching tokeniser, that is, it can:
 
