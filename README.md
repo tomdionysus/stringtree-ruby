@@ -19,7 +19,7 @@ gem install stringtree
 
 Stringtree is based on multidimensional binary trees - Each node in the tree has its usual left/right references to its children, but also an optional 'down' reference, which would refer to the root of the binary tree representing the next character in the string from this point. This version also has an 'up' reference on the node which can be faster for iterating backward through a set of trees.
 
-From a CS point of view, Tree is a specific implementation of a nested n-dimensional trie.
+From a CS point of view, Tree is a specific implementation of an n-dimensional trie.
 
 ## Limitations
 
