@@ -6,7 +6,7 @@
 [![Dependency Status](https://gemnasium.com/tomdionysus/stringtree.svg)](https://gemnasium.com/tomdionysus/stringtree)
 [![Gem Downloads](http://ruby-gem-downloads-badge.herokuapp.com/stringtree?color=brightgreen)](http://ruby-gem-downloads-badge.herokuapp.com/stringtree?color=brightgreen)
 
-Stringtree is a fast forward-only matching tokeniser and partial string matcher, that is, it can:
+Stringtree is a fast forward-only tokeniser and partial string matcher, that is, it can:
 
 * Load a dictionary of arbitarty size and record count - e.g. an actual dictionary, an english word list - where each record is associated with a key - e.g. a numeric identifier for the word.
 * Parse an arbitary data string in a single pass, finding and storing instances of each item in the dictionary and storing their offsets and associated keys.
