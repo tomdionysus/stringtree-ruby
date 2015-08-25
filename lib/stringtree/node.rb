@@ -20,6 +20,7 @@ module StringTree
     def initialize(char, parent = nil, value = nil)
       @char = char
       @up = parent
+      @value = value
     end
 
     # Add another node horizontally
@@ -112,13 +113,14 @@ module StringTree
       node
     end
 
-
-    def find_forward(str, offset = 0, length = str.length)
+    # Find the next match (terminating node with value non-nil) in the String data
+    # Optionally, set the offset into the data and its length
+    def find_forward(data, offset = 0, length = data.length)
       node = nil
       lastvaluenode = nil
       i = offset
       while (i<offset+length)
-        c = str[i]
+        c = data[i]
         if (node == nil)
           node = self.find_horizontal(c)
         elsif (node.down != nil)

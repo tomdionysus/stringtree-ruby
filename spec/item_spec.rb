@@ -16,4 +16,17 @@ describe StringTree::Item do
       expect(@nodea.match?).to eq(2)
     end
   end
+
+  describe "#value" do
+    it "should return @node.value if not nil" do
+      x = OpenStruct.new(:value => "foo")
+      @nodea = StringTree::Item.new(1,2,x)
+      expect(@nodea.value).to eq("foo")
+    end
+
+    it "should return nil if value is nil" do
+      @nodea = StringTree::Item.new(1,2,nil)
+      expect(@nodea.value).to be_nil()
+    end
+  end
 end

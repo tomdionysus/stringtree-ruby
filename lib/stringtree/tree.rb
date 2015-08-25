@@ -22,8 +22,16 @@ module StringTree
       (node == nil ? nil : node.value)
     end
 
+    # Return true if the given key exists
+    def has_key?(key)
+      return false if @root == nil
+      node = @root.find_vertical(key) 
+      return false if node.nil? or node.value.nil?
+      true
+    end
+
     # Return an Array of Strings representing all partial matches forward of key in the Tree.
-    # Please note the key itself, if found, is not included.
+    # Please note the key itself is not included, even if it exists as a value.
     #
     # E.g.: A tree containing 'ant','antler','deer','anthropic','beer'
     # tree.partials('ant') would return ['antler','anthropic']
@@ -35,7 +43,7 @@ module StringTree
     end
 
     # Rebalance the tree for faster access.
-    def optimize
+    def optimize!
       return nil if @root == nil
       @root = @root.balance
     end
@@ -66,11 +74,13 @@ module StringTree
       add(key,value)
     end
 
-    def match_count(key,list)
+    # Return a Hash of terminating nodes to Integer counts for a given String data,
+    # i.e. Find the count of instances of each String in the tree in the given data.
+    def match_count(data, list = {})
       return nil if @root == nil
       i=0
-      while (i<key.length)
-        node = @root.find_forward(key, i, key.length-i)
+      while (i<data.length)
+        node = @root.find_forward(data, i, data.length-i)
         if (node!=nil && node.value!=nil)
           if (!list.has_key?(node)) 
             list[node] = 1

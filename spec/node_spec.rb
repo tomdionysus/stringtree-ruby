@@ -131,4 +131,57 @@ describe StringTree::Node do
       inst.all_partials('one')
     end
   end
+
+  describe '#find_forward' do
+    it 'should return the correct node' do
+
+      inst = StringTree::Node.new 'b'
+      inst.left = StringTree::Node.new 'a'
+      inst.right = StringTree::Node.new 'c'
+      inst.down = StringTree::Node.new '2', inst, 'one'
+      inst.down.left = StringTree::Node.new '1', inst
+      inst.down.right = StringTree::Node.new '3', inst
+
+      expect(inst.find_forward("b2",0,2)).to be(inst.down)
+      expect(inst.find_forward("asoicbasicn",0,2)).to be_nil
+    end
+  end
+
+  describe '#to_s' do
+    it 'should return the correct string' do
+      inst = StringTree::Node.new 'b'
+      inst.left = StringTree::Node.new 'a'
+      inst.right = StringTree::Node.new 'c'
+      inst.down = StringTree::Node.new '2', inst, 'one'
+      inst.down.left = StringTree::Node.new '1', inst
+      inst.down.right = StringTree::Node.new '3', inst
+
+      expect(inst.down.left.to_s).to eq("b1")
+      expect(inst.down.right.to_s).to eq("b3")
+      expect(inst.down.to_s).to eq("b2")
+      expect(inst.right.to_s).to eq("c")
+      expect(inst.left.to_s).to eq("a")
+      expect(inst.to_s).to eq("b")
+    end
+  end
+
+  describe '#length' do
+    it 'should return the correct count' do
+      inst = StringTree::Node.new 'b'
+      inst.left = StringTree::Node.new 'a'
+      inst.right = StringTree::Node.new 'c'
+      inst.down = StringTree::Node.new '2', inst, 'one'
+      inst.down.left = StringTree::Node.new '1', inst
+      inst.down.right = StringTree::Node.new '3', inst
+      inst.down.left.down = StringTree::Node.new 'z', inst.down.left
+      inst.down.left.down.left = StringTree::Node.new 'v', inst.down.left
+
+      expect(inst.down.left.down.left.length).to eq(3)
+      expect(inst.down.left.down.length).to eq(3)
+      expect(inst.down.left.length).to eq(2)
+      expect(inst.down.length).to eq(2)
+      expect(inst.length).to eq(1)
+    end
+  end
+
 end

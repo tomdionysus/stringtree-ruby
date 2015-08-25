@@ -85,6 +85,10 @@ Where 28 is the offset where the token was found, 'platform' is the token itself
 The demo code then goes into a console, which will do partial searches within the dictionary. Type a partial word and press enter, and the demo will show all words in the dictionary that start with the partial entered.
 Type 'exit' to finish the demo.
 
+## Code of Conduct
+
+The StringTree project is committed to the [Contributor Covenant](http://contributor-covenant.org). Please read [CODE_OF_CONDUCT.md] before making any contributions or comments.
+
 ## References
 
 * http://www.ruby-doc.org

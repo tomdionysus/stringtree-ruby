@@ -16,3 +16,4 @@ else
 end
 
 require 'stringtree'
+require 'ostruct'
