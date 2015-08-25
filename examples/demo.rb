@@ -6,7 +6,7 @@ class Main
 
     begin
       root = File.dirname(__FILE__)
-      @st = Stringtree::Tree.new
+      @st = StringTree::Tree.new
       puts "Loading Dictionary..."
       @count = 0
       File.open("#{root}/dictionary.txt", "r") do |infile|
@@ -32,7 +32,7 @@ class Main
 
       do_partial_matching
     rescue Exception => e
-      puts "Stringtree demo has encountered an error (#{e.message}). Please run again."
+      puts "StringTree demo has encountered an error (#{e.message}). Please run again."
     end
   end
 

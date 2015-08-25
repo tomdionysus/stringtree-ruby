@@ -1,4 +1,4 @@
-module Stringtree
+module StringTree
   # Represents an individual tokenized item in a dataset, i.e. A match, its offset and its terminator node
   class Item
     # The offset of the Item in the dataset, in chars

@@ -6,7 +6,7 @@
 [![Dependency Status](https://gemnasium.com/tomdionysus/stringtree.svg)](https://gemnasium.com/tomdionysus/stringtree)
 [![Gem Downloads](http://ruby-gem-downloads-badge.herokuapp.com/stringtree?color=brightgreen)](http://ruby-gem-downloads-badge.herokuapp.com/stringtree?color=brightgreen)
 
-Stringtree is a fast forward-only tokeniser and partial string matcher, that is, it can:
+StringTree is a fast forward-only tokeniser and partial string matcher, that is, it can:
 
 * Load a dictionary of arbitarty size and record count - e.g. an actual dictionary, an english word list - where each record is associated with a key - e.g. a numeric identifier for the word.
 * Parse an arbitary data string in a single pass, finding and storing instances of each item in the dictionary and storing their offsets and associated keys.
@@ -22,7 +22,7 @@ gem install stringtree
 
 ## Implementation
 
-Stringtree is based on multidimensional binary trees - Each node in the tree has its usual left/right references to its children, but also an optional 'down' reference, which would refer to the root of the binary tree representing the next character in the string from this point. This version also has an 'up' reference on the node which can be faster for iterating backward through a set of trees.
+StringTree is based on multidimensional binary trees - Each node in the tree has its usual left/right references to its children, but also an optional 'down' reference, which would refer to the root of the binary tree representing the next character in the string from this point. This version also has an 'up' reference on the node which can be faster for iterating backward through a set of trees.
 
 From a CS point of view, Tree is a specific implementation of an n-dimensional trie.
 

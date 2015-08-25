@@ -1,5 +1,5 @@
-module Stringtree
-  # Node represents a node in a Stringtree::Tree. 
+module StringTree
+  # Node represents a node in a StringTree::Tree. 
   #
   # This is essentially a binary tree node with additional up and down pointers.
   class Node

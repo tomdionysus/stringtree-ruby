@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-describe Stringtree::Tree do
+describe StringTree::Tree do
   describe "#initialize" do
     it "should initialize correctly" do
-      @tree = Stringtree::Tree.new
+      @tree = StringTree::Tree.new
       expect(@tree.root).to be_nil()
     end
   end

@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.test_files    = s.files.grep(%r{^(test|spec|features)/})
   s.name          = "stringtree"
   s.require_paths = ["lib"]
-  s.version       = Stringtree::VERSION
+  s.version       = StringTree::VERSION
 
   s.add_development_dependency "coveralls"
   s.add_development_dependency "bundler", "~> 1.10"

@@ -1,7 +1,7 @@
-module Stringtree
-  # Tree represents a complete Stringtree, and has functionality resembling a Hash.
+module StringTree
+  # Tree represents a complete StringTree, and has functionality resembling a Hash.
   class Tree
-    # The root Stringtree::Node, or nil if empty
+    # The root StringTree::Node, or nil if empty
     attr_accessor :root
     
     # Create a new empty Tree
@@ -41,7 +41,7 @@ module Stringtree
     end
 
     # Tokenize the string Data by finding all instances of any key in the Tree.
-    # yields each instance as a Stringtree::Item.
+    # yields each instance as a StringTree::Item.
     def match_all(data, &block)
       return nil if @root == nil
       i=0
