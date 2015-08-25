@@ -6,7 +6,7 @@ module StringTree
     
     # Create a new empty Tree
     def initialize
-      @root = nil
+      clear
     end
 
     # Add a key and value to this Tree
@@ -15,18 +15,34 @@ module StringTree
       @root.add_vertical(key,value)
     end
 
+    alias []= add
+
+    # Clear the Tree (Remove all keys/values)
+    def clear
+      @root = nil
+    end
+
     # Find a specified key in the Tree, and return the value, or nil if not found.
     def find(key)
-      return nil if @root == nil
-      node = @root.find_vertical(key)
+      node = find_node(key)
       (node == nil ? nil : node.value)
     end
 
+    alias [] find
+
     # Return true if the given key exists
     def has_key?(key)
-      return false if @root == nil
-      node = @root.find_vertical(key) 
-      return false if node.nil? or node.value.nil?
+      !find_node(key).nil?
+    end
+
+    alias include? has_key?
+
+    # Delete a key 
+    def delete(key)
+      node = find_node(key) 
+      return false if node.nil?
+      node.value = nil
+      node.prune
       true
     end
 
@@ -45,6 +61,7 @@ module StringTree
     # Rebalance the tree for faster access.
     def optimize!
       return nil if @root == nil
+      @root.prune
       @root = @root.balance
     end
 
@@ -62,16 +79,6 @@ module StringTree
           i += 1
         end
       end
-    end
-
-    # Alias for find 
-    def [](key)
-      find(key)
-    end
-
-    # Alias for add
-    def []=(key,value)
-      add(key,value)
     end
 
     # Return a Hash of terminating nodes to Integer counts for a given String data,
@@ -93,6 +100,15 @@ module StringTree
         end
       end
       list
+    end
+
+    private
+
+    # Find a node by its key
+    def find_node(key)
+      return nil if @root == nil
+      node = @root.find_vertical(key)
+      (node.nil? || node.value.nil? ? nil : node)
     end
   end
 end

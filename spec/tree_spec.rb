@@ -262,5 +262,51 @@ describe StringTree::Tree do
         end
       end
     end
+
+    describe '#delete' do
+      it 'should return false on empty tree' do
+        inst = StringTree::Tree.new
+
+        expect(inst.delete("test")).to be(false)
+      end
+      it 'should delete only the correct key and return true' do
+        inst = StringTree::Tree.new
+
+        inst["OneX"] = 5
+        inst["TwoX"] = 3
+        inst["TenX"] = 10
+
+        expect(inst.delete("TwoX")).to be(true)
+
+        expect(inst.has_key?("OneX")).to be(true)
+        expect(inst.has_key?("TenX")).to be(true)
+        expect(inst.has_key?("TwoX")).to be(false)
+      end
+
+      it 'should return false if key not found' do
+        inst = StringTree::Tree.new
+
+        inst["OneX"] = 5
+        inst["TwoX"] = 3
+        inst["TenX"] = 10
+
+        expect(inst.delete("FiveX")).to be(false)
+        expect(inst.delete("OneX1")).to be(false)
+        expect(inst.delete("Two")).to be(false)
+      end
+
+      it 'should not corrupt tree' do
+        inst = StringTree::Tree.new
+
+        inst["super"] = 5
+        inst["supercala"] = 3
+        inst["supercalafragilistic"] = 10
+
+        expect(inst.delete("super")).to be(true)
+        expect(inst.has_key?("super")).to be(false)
+        expect(inst.has_key?("supercala")).to be(true)
+        expect(inst.has_key?("supercalafragilistic")).to be(true)
+      end
+    end
   end
 end

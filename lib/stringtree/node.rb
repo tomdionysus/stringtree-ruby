@@ -94,7 +94,7 @@ module StringTree
     # and repeating with the next character and so on. Return the last node if found, or nil if any
     # horizontal search fails. 
     # Optionally, set the offset into the string and its length
-    def find_vertical(str, offset = 0, length = str.length)
+    def find_vertical(str, offset = 0, length = str.length-offset)
       node = nil
       i = offset
       while (i<offset+length)
@@ -211,6 +211,16 @@ module StringTree
       list = []      
       @down.walk(str) { |str| list << str } unless @down.nil?
       list
+    end
+
+    # Prune the tree back from this node onward so that all leaves have values.
+    def prune
+      return true if !@down.nil? && down.prune 
+      return true if !@left.nil? && left.prune 
+      return true if !@right.nil? && right.prune 
+      return true unless @value.nil?
+      up.down = nil if !up.nil? && left.nil? && right.nil?
+      false
     end
   end
 end

@@ -87,7 +87,7 @@ Type 'exit' to finish the demo.
 
 ## Code of Conduct
 
-The StringTree project is committed to the [Contributor Covenant](http://contributor-covenant.org). Please read [CODE_OF_CONDUCT.md] before making any contributions or comments.
+The StringTree project is committed to the [Contributor Covenant](http://contributor-covenant.org). Please read [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) before making any contributions or comments.
 
 ## References
 
