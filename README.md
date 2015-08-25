@@ -6,10 +6,11 @@
 [![Dependency Status](https://gemnasium.com/tomdionysus/stringtree.svg)](https://gemnasium.com/tomdionysus/stringtree)
 [![Gem Downloads](http://ruby-gem-downloads-badge.herokuapp.com/stringtree?color=brightgreen)](http://ruby-gem-downloads-badge.herokuapp.com/stringtree?color=brightgreen)
 
-Stringtree is a (very) fast forward-only matching tokeniser, that is, it can:
+Stringtree is a fast forward-only matching tokeniser and partial string matcher, that is, it can:
 
 * Load a dictionary of arbitarty size and record count - e.g. an actual dictionary, an english word list - where each record is associated with a key - e.g. a numeric identifier for the word.
 * Parse an arbitary data string in a single pass, finding and storing instances of each item in the dictionary and storing their offsets and associated keys.
+* Host a set of strings in such a way as to efficiently match partial input strings against the dictionary
 
 This has become my 'hello world' over the years with any new language. I use it to get to know a language, as implementing it correctly involves many of the usual concepts needed get started coding from the hip (syntax, grammar, classes, public/private instance vars, statics, pass-by value/pass-by-reference etc.) not to mention usual code support skills like how to set up unit tests for this language and environment, etc.
 
@@ -44,16 +45,31 @@ Tree has the following applications:
 
 The demo is tested and runs under Ruby 1.9.3, and will probably work under earlier and later versions but this is not guaranteed. The unit tests require rspec also:
 
-    bundle install
+```bash
+bundle install
+```
 
 ## Specs
+
 Specs are rspec, as follows:
 
-    rspec
+```bash
+rspec
+```
+
+## Documentation
+
+Regenerate the Documentation with `rake`:
+
+```bash
+rake rdoc
+```
 
 ## Demo
 
-    bundle exec ruby examples/demo.rb
+```bash
+bundle exec ruby examples/demo.rb
+```
 
 This will generate two files:
 

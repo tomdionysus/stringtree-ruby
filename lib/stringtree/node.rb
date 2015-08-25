@@ -1,11 +1,29 @@
 module Stringtree
+  # Node represents a node in a Stringtree::Tree. 
+  #
+  # This is essentially a binary tree node with additional up and down pointers.
   class Node
-    attr_accessor :char, :left, :right, :down, :up, :value
-    def initialize(char, parent = nil)
+    # The char Character value of this node
+    attr_accessor :char
+    # The next left node to this node, or nil
+    attr_accessor :left
+    # The next right node to this node, or nil
+    attr_accessor :right
+    # The child (down) node of this node, or nil
+    attr_accessor :down
+    # The parent (up) node to this node, or nil
+    attr_accessor :up
+    # The value of this node, or nil
+    attr_accessor :value
+
+    # Create a new Node with the given char and optionally, parent node and value
+    def initialize(char, parent = nil, value = nil)
       @char = char
       @up = parent
     end
 
+    # Add another node horizontally
+    # (within the left-right binary tree of this Node)
     def add_horizontal(node)
       if(node.char > @char)
         if (@right === nil)
@@ -22,6 +40,8 @@ module Stringtree
       end
     end
 
+    # Add and return a new, or return the existing, node with the given char horizontally
+    # (within the left-right binary tree of this Node)
     def add_horizontal_char(char)
       node = find_horizontal(char);
       if node != nil
@@ -32,6 +52,8 @@ module Stringtree
       return node
     end
 
+    # Find and return the node corresponding to the given char horizontally, or nil if not found
+    # (within the left-right binary tree of this Node)
     def find_horizontal(char)
       return self if @char == char
       if(char > @char)
@@ -49,6 +71,9 @@ module Stringtree
       end
     end
 
+    # Add the given String str and value vertically to this node, by adding or finding each character 
+    # horizontally, then stepping down and repeating with the next character and so on, writing the 
+    # value to the last node.
     def add_vertical(str, value)
       node = nil
       str.each_char { |c|
@@ -64,6 +89,10 @@ module Stringtree
       node.value = value
     end
 
+    # Find the given String str vertically by finding each character horizontally, then stepping down 
+    # and repeating with the next character and so on. Return the last node if found, or nil if any
+    # horizontal search fails. 
+    # Optionally, set the offset into the string and its length
     def find_vertical(str, offset = 0, length = str.length)
       node = nil
       i = offset
@@ -82,6 +111,7 @@ module Stringtree
       end
       node
     end
+
 
     def find_forward(str, offset = 0, length = str.length)
       node = nil
@@ -103,6 +133,8 @@ module Stringtree
       lastvaluenode
     end
 
+    # Count the number of nodes in the given direction (:up,:down,:left,:right) until
+    # the edge of the tree.
     def count(direction)
       i = 0
       node = self
@@ -113,6 +145,8 @@ module Stringtree
       i
     end
 
+    # Recursively balance this node in its own tree, and every node in all four directions,
+    # and return the new root node.
     def balance
       node = self
       i = (node.count(:right) - node.count(:left))/2
@@ -142,6 +176,8 @@ module Stringtree
       node
     end
 
+    # Walk the tree from this node, yielding all strings and values where the
+    # value is not nil. Optionally, use the given prefix String str.
     def walk(str="", &block)
       @down.walk(str+char, &block) if @down != nil
       @left.walk(str, &block) if @left != nil
@@ -149,6 +185,8 @@ module Stringtree
       @right.walk(str, &block) if @right != nil
     end
 
+    # Return the complete string from the tree root up to and including this node
+    # i.e. The total string key for this node from root.
     def to_s
       st = @char
       node = self
@@ -160,11 +198,14 @@ module Stringtree
       st
     end
 
+    # Return the length of the total string key for this node from root.
     def length
       count(:up)
     end
 
-    def all_partials(str)
+    # Return an Array of Strings of all possible partial string from this node.
+    # Optionally, use the given prefix String str.
+    def all_partials(str = "")
       list = []      
       @down.walk(str) { |str| list << str } unless @down.nil?
       list
