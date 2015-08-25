@@ -16,7 +16,7 @@ This has become my 'hello world' over the years with any new language. I use it 
 
 ## Installation
 
-```ruby
+```bash
 gem install stringtree
 ```
 
